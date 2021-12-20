@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bordertown</title>
+    <style>
+        * {
+            margin: 0;
+            /*box-sizing: border-box;*/
+            /*border: 1px red solid;*/
+        }
+
+        body {
+            background-color: #5706;
+            background-color:#5706;
+
+        }
+
+        .container {
+            display: grid;
+            background-color: white;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            width: 90%;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        nav {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            color: black;
+            font-size: 30px;
+        }
+
+        button {
+            width: 150px;
+            height: 50px;
+            color: white;
+            background-color: #333333;
+            font-size: 20px;
+            font-family: SansSerif;
+        }
+
+        a:link {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:visited {
+            color: white;
+        }
+
+        a:hover {
+            color: darkseagreen;
+        }
+
+        /*.image {*/
+        /*    grid-column-start: 1;*/
+        /*    grid-column-end: 1;*/
+        /*    grid-row-start: 1;*/
+        /*    grid-row-end: 1;*/
+        /*}*/
+        body {font-family: Arial, Helvetica, sans-serif;}
+        * {box-sizing: border-box;}
+
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        .section {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            grid-column-start: 1;
+            grid-column-end: 3;
+
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<nav>
+    <img src="cof.png" alt="HTML5 Icon" style="width:58px;height:58px;">
+    <h1>Bordertown Coffee</h1>
+    <button><a href="Home.html">Home</a></button>
+    <button><a href="MENU.html">Menu</a></button>
+    <button><a href="OurStory.html">Our Story</a></button>
+    <button><a href="Res.html">Reserve</a></button>
+    <button><a href="FAQ.html">FAQs</a></button>
+</nav>
+    <h3>Reserve a Study Spot</h3>
+
+    <div class="section">
+        <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="country">Time</label>
+            <select id="country" name="country">
+                <option value="australia">1.00pm</option>
+                <option value="canada">2.00pm</option>
+                <option value="usa">3.00pm</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</div>
+</body>
+</html>
+

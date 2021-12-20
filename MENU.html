@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bordertown</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            /*border: 1px red solid;*/
+        }
+
+        body {
+            background-color: #5706;
+        }
+
+        .container {
+            display: grid;
+            /*height: 800px;*/
+            background-color: white;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            width: 90%;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        nav {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            color: black;
+            font-size: 30px;
+            margin: 0 auto;
+        }
+
+        button {
+            width: 150px;
+            height: 50px;
+            color: white;
+            background-color: #333333;
+            font-size: 20px;
+            font-family: SansSerif;
+        }
+
+        a:link {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:visited {
+            color: white;
+        }
+
+        a:hover {
+            color: darkseagreen;
+        }
+
+        img {
+            float: left;
+        }
+
+        h1 {
+            display: inline;
+            font-size: 16px;
+        }
+
+        .menu {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            margin: 0 auto;
+            position: relative;
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+
+
+        table, th, td {
+            border: black solid 1px;
+        }
+
+        table {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+    </style>
+<body>
+<div class="container">
+    <nav>
+        <img src="cof.png" alt="HTML5 Icon" style="width:58px;height:58px;">
+        <h1>Bordertown Coffee</h1>
+        <button><a href="Home.html">Home</a></button>
+        <button><a href="MENU.html">Menu</a></button>
+        <button><a href="OurStory.html">Our Story</a></button>
+        <button><a href="Res.html">Reserve</a></button>
+        <button><a href="FAQ.html">FAQs</a></button>
+    </nav>
+    <main class="menu">
+        <table>
+            <tr>
+                <th>Drink</th>
+                <th>Food</th>
+            </tr>
+            <tr>
+                <td>Latte: 4.50</td>
+                <td>Scone 4.00</td>
+            </tr>
+            <tr>
+                <td>Mocha 4.50</td>
+                <td>Cookie (chocalate chip) 2.50</td>
+            </tr>
+            <tr>
+                <td>Cold Brew 3.50</td>
+                <td>Croissant 1.50</td>
+            </tr>
+            <tr>
+                <td>Black Coffee 2.00</td>
+                <td>Fruit Cup 2.00</td>
+            </tr>
+            <tr>
+                <td>Espresso 2.00</td>
+                <td>Ham & cheese Sandwhich 5.00</td>
+            </tr>
+        </table>
+    </main>
+</div>
+</body>
+</html>

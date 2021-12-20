@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bordertown</title>
+
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            border: 1px red solid;
+        }
+
+        body {
+            background-color: #5706;
+            background-color:#5706;
+            font-family: Verdana, sans-serif;
+        }
+
+        .container {
+            display: grid;
+            background-color: white;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            width: 90%;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        nav {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            color: black;
+            font-size: 30px;
+        }
+
+        button {
+            width: 150px;
+            height: 50px;
+            color: white;
+            background-color: #333333;
+            font-size: 20px;
+            font-family: SansSerif;
+        }
+
+        a:link {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:visited {
+            color: white;
+        }
+
+        a:hover {
+            color: darkseagreen;
+        }
+
+        img {
+            float: left;
+        }
+
+        h1 {
+            display: inline;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <nav>
+        <img src="cof.png" alt="HTML5 Icon" style="width:58px;height:58px;">
+        <h1>Bordertown Coffee</h1>
+        <button><a href="Home.html">Home</a></button>
+        <button><a href="MENU.html">Menu</a></button>
+        <button><a href="OurStory.html">Our Story</a></button>
+        <button><a href="Res.html">Reserve</a></button>
+        <button><a href="FAQ.html">FAQs</a></button>
+    </nav>
+</div><!-- END OF CONTAINER -->
+</body>
+</html>
